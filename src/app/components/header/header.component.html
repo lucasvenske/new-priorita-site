@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+  <a routerLink="/" class="navbar-brand">
+    <img style="height: 40px" src="../../../assets/img/logo_priorita.svg" alt="Caravan">
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" (click)="scroll('#servicos')">Serviços</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/sobre-nos">Sobre Nós</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scroll('#contato')">Contato</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$theme-colors: (
+    "primary": #4b5f78,
+    "dark": #141414
+);
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+body {
+    padding-top: 68px;
+}
+
+.box-shadow {
+box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+            0 4px 8px 0 rgba(0,0,0,.05);
+}
+
+@media (max-width: 767px) {
+    #home-quote .display-4{
+        font-size: 2.5rem;
+    }
+    body {
+        padding-top: 0px;
+    }
+    .fixed-top {
+        position: relative;
+    }
+}
+
+.lista-plano li + li {
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.lista-plano li {
+    padding: 1rem;
+}
